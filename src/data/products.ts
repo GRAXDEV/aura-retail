@@ -1,0 +1,295 @@
+import { Product, Review } from '../types';
+
+import heroImg from '../assets/images/aura_campaign_hero_1791744441115.jpg';
+import woolOvershirtImg from '../assets/images/aura_wool_overshirt_1791744457576.jpg';
+import leatherToteImg from '../assets/images/aura_leather_tote_1791744470509.jpg';
+import minimalSneakerImg from '../assets/images/aura_minimal_sneaker_1791744483045.jpg';
+import cashmereScarfImg from '../assets/images/aura_cashmere_scarf_1791744498371.jpg';
+
+export { heroImg };
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'wool-overshirt-charcoal',
+    name: 'Merino Architectural Overshirt',
+    tagline: 'Heavyweight double-faced virgin wool with horn buttons',
+    category: 'Apparel',
+    price: 285,
+    compareAtPrice: 340,
+    rating: 4.9,
+    reviewCount: 142,
+    isBestseller: true,
+    stockLeft: 4,
+    image: woolOvershirtImg,
+    secondaryImage: heroImg,
+    colors: [
+      { name: 'Washed Charcoal', hex: '#37383B' },
+      { name: 'Oatmeal Melange', hex: '#D6CEBE' },
+      { name: 'Deep Midnight', hex: '#1C222D' },
+    ],
+    sizes: [
+      { size: 'S', available: true, stockCount: 2 },
+      { size: 'M', available: true, stockCount: 4 },
+      { size: 'L', available: true, stockCount: 1 },
+      { size: 'XL', available: true, stockCount: 3 },
+    ],
+    description:
+      'Engineered for transition between formal architecture and spontaneous travel. Cut from dense 480 GSM double-faced merino wool milled in Biella, Italy. Unlined with French-bound interior seams and drop-in chest flap pockets sized for passport and field notes.',
+    features: [
+      '480 GSM virgin merino wool, woven in Biella, Italy',
+      'Matte natural buffalo horn buttons with cross-stitch reinforcement',
+      'Two oversized flap chest pockets with hidden pen slot',
+      'Clean square hem tailored to drape untucked or styled open',
+      'Bound interior seam allowances for frictionless layering',
+    ],
+    materials: '100% Extrafine Merino Wool · Natural Horn Buttons · Cotton Seam Tape',
+    fitNotes: 'True to relaxed tailoring. Size down for a traditional slim silhouette over a tee.',
+    origin: 'Crafted in Bergamo, Italy',
+  },
+  {
+    id: 'tote-italian-calfskin',
+    name: 'Tuscan Structured Portfolio Tote',
+    tagline: 'Vegetable-tanned full-grain calfskin with brushed brass hardware',
+    category: 'Leather Goods',
+    price: 360,
+    rating: 4.95,
+    reviewCount: 98,
+    isBestseller: true,
+    stockLeft: 6,
+    image: leatherToteImg,
+    secondaryImage: heroImg,
+    colors: [
+      { name: 'Obsidian Black', hex: '#1A1A1A' },
+      { name: 'Cognac Saddle', hex: '#8B4B27' },
+      { name: 'Dark Truffle', hex: '#3B332E' },
+    ],
+    sizes: [
+      { size: 'Standard (16L)', available: true, stockCount: 6 },
+      { size: 'Grand Weekender (24L)', available: true, stockCount: 2 },
+    ],
+    description:
+      'A study in quiet authority. Hand-assembled by third-generation leather artisans in Santa Croce sull’Arno using vegetable-tanned Tuscan calfskin that develops an authentic, rich patina over decades of daily carry.',
+    features: [
+      'Full-grain vegetable-tanned Tuscan calfskin leather',
+      'Padded sleeve accommodates up to 16” MacBook Pro',
+      'Solid brushed brass hardware engineered in Florence',
+      'Dual reinforced rolled handles with comfortable 9.5" drop',
+      'Water-repellent Japanese cotton twill lining with key tether',
+    ],
+    materials: '100% Certified Italian Calfskin · Solid Brass · Japanese Twill Lining',
+    fitNotes: 'Measures 40cm x 31cm x 13cm (15.7” x 12.2” x 5.1”). Weight: 1.1kg.',
+    origin: 'Handmade in Santa Croce sull’Arno, Italy',
+  },
+  {
+    id: 'minimal-nubuck-sneaker',
+    name: 'Atelier Low Nubuck Sneaker',
+    tagline: 'Chalk velvety nubuck with stitched Margom rubber cupsole',
+    category: 'Footwear',
+    price: 240,
+    compareAtPrice: 280,
+    rating: 4.88,
+    reviewCount: 216,
+    isBestseller: true,
+    image: minimalSneakerImg,
+    secondaryImage: heroImg,
+    colors: [
+      { name: 'Chalk White', hex: '#EDEBE6' },
+      { name: 'Desert Sand', hex: '#CBBFA8' },
+      { name: 'Charcoal Suede', hex: '#444446' },
+    ],
+    sizes: [
+      { size: 'EU 40 / US 7.5', available: true, stockCount: 3 },
+      { size: 'EU 41 / US 8.5', available: true, stockCount: 5 },
+      { size: 'EU 42 / US 9.5', available: true, stockCount: 2 },
+      { size: 'EU 43 / US 10.5', available: true, stockCount: 6 },
+      { size: 'EU 44 / US 11.5', available: true, stockCount: 4 },
+      { size: 'EU 45 / US 12.5', available: true, stockCount: 1 },
+    ],
+    description:
+      'Stripped of all external logos, plastic reinforcements, and visual noise. Constructed with premium Italian nubuck leather and a vulcanized Margom rubber cupsole stitched 360 degrees for lifelong resoleability.',
+    features: [
+      'Italian velvet-finish nubuck leather upper',
+      'Full calfskin glove leather lining for sockless breathability',
+      'Authentic Italian Margom rubber cupsole with anti-slip tread',
+      'Removable contoured orthotic footbed with natural cork base',
+      'Waxed organic cotton tonal flat laces (includes spare pair)',
+    ],
+    materials: 'Upper: Tuscan Nubuck · Lining: Calfskin · Sole: 100% Italian Rubber',
+    fitNotes: 'True to standard European sizing. If between sizes, recommend sizing down.',
+    origin: 'Assembled in Porto, Portugal',
+  },
+  {
+    id: 'pure-cashmere-scarf',
+    name: 'Highland Brushed Cashmere Scarf',
+    tagline: '7-gauge pure Mongolian cashmere with ripple water-finish',
+    category: 'Objects',
+    price: 175,
+    rating: 4.97,
+    reviewCount: 84,
+    isBestseller: false,
+    stockLeft: 8,
+    image: cashmereScarfImg,
+    secondaryImage: heroImg,
+    colors: [
+      { name: 'Deep Forest Olive', hex: '#4B5338' },
+      { name: 'Camel Vicuña', hex: '#AF7E51' },
+      { name: 'Heather Smoke', hex: '#878787' },
+    ],
+    sizes: [
+      { size: 'One Size (190cm x 35cm)', available: true, stockCount: 8 },
+    ],
+    description:
+      'Woven exclusively from ethically harvested underfleece of Mongolian mountain goats, brushed using natural dried teasel heads to achieve a distinct water-ripple finish that traps insulating warm air.',
+    features: [
+      '100% Grade-A Mongolian cashmere (fiber length >36mm, <15.5 microns)',
+      'Traditional natural teasel finish creating signature ripples',
+      'Hand-twisted fringe details at both ends',
+      'Hypoallergenic, ultra-lightweight, and remarkably warm',
+      'Presented in a rigid recycled paper keepsake storage box',
+    ],
+    materials: '100% Pure Mongolian Cashmere',
+    fitNotes: '190cm length allows single-wrap, Parisian knot, or loose drape.',
+    origin: 'Woven in Elgin, Scotland',
+  },
+  {
+    id: 'tailored-graphite-overcoat',
+    name: 'Milano City Structured Overcoat',
+    tagline: 'Single-breasted 600 GSM wool-cashmere with unconstructed shoulders',
+    category: 'Apparel',
+    price: 520,
+    rating: 4.92,
+    reviewCount: 63,
+    isBestseller: false,
+    stockLeft: 3,
+    image: heroImg,
+    secondaryImage: woolOvershirtImg,
+    colors: [
+      { name: 'Graphite Heather', hex: '#525458' },
+      { name: 'Raven Black', hex: '#1C1C1E' },
+    ],
+    sizes: [
+      { size: 'S / 38', available: true, stockCount: 1 },
+      { size: 'M / 40', available: true, stockCount: 2 },
+      { size: 'L / 42', available: true, stockCount: 0 },
+      { size: 'XL / 44', available: true, stockCount: 2 },
+    ],
+    description:
+      'The definitive outerwear anchor for the modern capsule wardrobe. Cut with an unconstructed natural shoulder and clean knee-length drape that wears seamlessly over knitwear or a tailored jacket.',
+    features: [
+      '90% Wool, 10% Cashmere blended melange fabric (600 GSM)',
+      'Full Bemberg cupro lining for smooth friction-free glide',
+      'Deep center-back walking vent with clean bar-tack anchors',
+      'Two slanted welt handwarmer pockets + internal passport pocket',
+      'Steamed-finish notch lapel with functional flower loop',
+    ],
+    materials: '90% Virgin Wool · 10% Cashmere · 100% Bemberg Cupro Lining',
+    fitNotes: 'Tailored regular fit designed to comfortably accommodate heavy knitwear.',
+    origin: 'Crafted in Ancona, Italy',
+  },
+  {
+    id: 'leather-bifold-card-case',
+    name: 'Precision Folded Card Wallet',
+    tagline: 'Ultra-slim 4-slot minimalist vegetable-tanned card sleeve',
+    category: 'Objects',
+    price: 85,
+    compareAtPrice: 105,
+    rating: 4.85,
+    reviewCount: 119,
+    isBestseller: false,
+    stockLeft: 12,
+    image: leatherToteImg,
+    secondaryImage: cashmereScarfImg,
+    colors: [
+      { name: 'Obsidian Black', hex: '#1A1A1A' },
+      { name: 'Cognac Saddle', hex: '#8B4B27' },
+    ],
+    sizes: [
+      { size: 'One Size', available: true, stockCount: 12 },
+    ],
+    description:
+      'Zero synthetic fillers, zero cardboard lining. Crafted solely from 3 pieces of vegetable-tanned bridle leather stitched with bonded waxed thread. Holds 8 cards and folded bills in a 6mm profile.',
+    features: [
+      'Holds 6–8 credit cards and folded cash',
+      'Hand-burnished wax edges sealed against moisture',
+      'Ultra-thin 6mm empty profile eliminates pocket bulge',
+      'RFID-blocking electromagnetic shield in central pocket',
+    ],
+    materials: '100% Vegetable-Tanned Full-Grain Leather · German Waxed Thread',
+    fitNotes: 'Measures 10cm x 7cm x 0.6cm.',
+    origin: 'Handmade in Florence, Italy',
+  },
+];
+
+export const UPSELL_ITEMS = [
+  {
+    id: 'organic-leather-balm',
+    name: 'Organic Beeswax Leather Conditioning Balm',
+    price: 24,
+    image: leatherToteImg,
+    category: 'Objects',
+    desc: 'Pure jojoba and natural beeswax formula to restore and nourish vegetable-tanned leathers.',
+  },
+  {
+    id: 'cashmere-cedar-comb',
+    name: 'Handcrafted Cedar Wood Knit & Cashmere Comb',
+    price: 18,
+    image: cashmereScarfImg,
+    category: 'Objects',
+    desc: 'Gentle natural bristle comb to eliminate surface pilling and preserve wool fibers.',
+  },
+];
+
+export const REVIEWS: Review[] = [
+  {
+    id: 'rev-1',
+    author: 'Julian M.',
+    location: 'Copenhagen, Denmark',
+    date: '3 days ago',
+    rating: 5,
+    title: 'Sublime material weight and immaculate tailoring',
+    comment:
+      'The Merino Architectural Overshirt exceeded all my expectations. The fabric has a substantial drape that feels indestructible yet silky to the touch. The horn buttons and internal seam tape prove Aura operates at Savile Row quality standards.',
+    verified: true,
+    itemPurchased: 'Merino Architectural Overshirt / M / Washed Charcoal',
+    helpfulCount: 38,
+  },
+  {
+    id: 'rev-2',
+    author: 'Elena Rostova',
+    location: 'Zurich, Switzerland',
+    date: '1 week ago',
+    rating: 5,
+    title: 'The definitive daily portfolio tote',
+    comment:
+      'I carry a 16” MacBook Pro, sketchbook, and chargers daily. The Tuscan calfskin leather has a rich smell, and after a month of heavy rain and transit, it has developed the most gorgeous subtle luster. Worth every cent.',
+    verified: true,
+    itemPurchased: 'Tuscan Structured Portfolio Tote / Obsidian Black',
+    helpfulCount: 29,
+  },
+  {
+    id: 'rev-3',
+    author: 'David Chen',
+    location: 'Vancouver, Canada',
+    date: '2 weeks ago',
+    rating: 5,
+    title: 'Best minimalist sneaker on the market',
+    comment:
+      'No gaudy branding, zero break-in period, and the nubuck is velvety soft. Wore them for 18,000 steps through Tokyo on day one with zero hotspots. The Margom sole is true luxury.',
+    verified: true,
+    itemPurchased: 'Atelier Low Nubuck Sneaker / EU 42 / Chalk White',
+    helpfulCount: 44,
+  },
+  {
+    id: 'rev-4',
+    author: 'Claire Vandeberg',
+    location: 'Amsterdam, Netherlands',
+    date: '3 weeks ago',
+    rating: 5,
+    title: 'Unbelievable cloud-like softness',
+    comment:
+      'The teasel ripple finish on the cashmere scarf catches natural light beautifully. It has kept me warm through biting North Sea winds. The packaging was also completely recyclable and beautifully presented.',
+    verified: true,
+    itemPurchased: 'Highland Brushed Cashmere Scarf / Deep Forest Olive',
+    helpfulCount: 17,
+  },
+];
